@@ -78,7 +78,8 @@ function modified(){
         let list =[...marketShop]
         for (let i = 0; i < list.length; i++) {
             if(list[i].name===pdts){
-              list[i].quantity=num ;
+                 document.querySelector(".pdts").innerHTML= ` quantity: ${ list[i].quantity=num }   ,,  type: ${list[i].type } `
+             // list[i].quantity=num ;
             }   
         }
 }
